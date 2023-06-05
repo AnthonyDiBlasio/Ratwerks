@@ -31,7 +31,7 @@ function Contact() {
         <div className="container h-100">
           <div style={{ position: "absolute", marginLeft: "20pc" }} className='card contactcard col-md-4'>
             <div style={{ color: "white" }} className="card-header bg-black p- h4">
-              Lets make Something Together
+              Lets Build Something Together
             </div>
             {status && <div className="alert alert-success">{status}</div>}
             <form style={{ padding: "5px" }} className="" onSubmit={sendEmail}>
