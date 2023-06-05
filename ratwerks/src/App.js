@@ -9,7 +9,7 @@ function App() {
     return (
 
         <Router>
-            <div className="site" style={{ flexGrow: 1 }}>
+          
                 <NavTabs />
 
                 <Routes>
@@ -18,7 +18,7 @@ function App() {
                 </Routes>
 
                 <Footer />
-            </div>
+       
         </Router>
 
     );
