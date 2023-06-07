@@ -1,5 +1,4 @@
 @media (min-width: 1200px) {
-
   /* Styles for desktop screens */
   * {
     margin: 0;
@@ -8,11 +7,19 @@
   }
 
   .container {
-    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-.logo3{
-  position: relative;
-}
+
+  .logo3 {
+    position: relative;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    left: 25%;
+    margin-top: 5pc;
+  }
+
   .root,
   html,
   body {
@@ -24,6 +31,7 @@
     position: relative;
     color: black;
   }
+
   .nav,
   .navbar,
   .li,
@@ -34,28 +42,29 @@
     font-weight: bolder;
     font-size: larger;
     background-color: #353535;
-
   }
+
   .masthead-title {
     position: relative;
-    font-size: 47px;
+    margin-top: 5pc;
+    font-size: 55px;
     line-height: 2;
     display: inline;
-    ;
+    left: 10%;
   }
 
   .ul-child {
-
     line-height: 3;
     text-indent: 50px;
-    font-size: x-large;
-
+    font-size: small;
   }
 
   .section-idea {
     position: relative;
-    
-    margin-top: 25pc
+    margin-top: 10pc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .ul-child::first-letter {
@@ -64,37 +73,40 @@
   }
 
   .bulb-img {
-    top: -40pc;
-    left: 40pc;
-    height: 650px;
+    position: relative;
+    top: 0pc;
+    height: 300px;
   }
 
   .logo4 {
     position: relative;
     border-radius: 2%;
-    height: 700px;
-    width: 375px;
-    margin-top: -20pc;
+    height: auto;
+    max-width: 400px;
+    margin-top: 10pc;
+    left:23%;
+    top: 6pc;
   }
 
   .div-idea {
-    width: 715px;
+    width: 500px;
+    height: auto;
   }
 
   .contact-div {
     position: relative;
     margin: none;
-    left: 30pc;
-    font-size: larger;
-    top: -45pc;
+    font-size: small;
+    top: -20pc;
     text-indent: 50px;
+    left: 52%;
+    width: 300px;
   }
 
   .contact-paragraph {
-    width: 700px;
+    width: 500px;
     margin-top: 6px;
-    height: 620px;
-
+    
   }
 
   .contact-paragraph::first-letter {
@@ -112,30 +124,31 @@
     bottom: pc;
   }
 
-
   .about {
-    font-size: larger;
+    font-size: small;
     line-height: 3;
-  
+    width: 800px;
   }
+
   .about-2 {
     columns: 1;
-    font-size: larger;
+    font-size: small;
     text-indent: 50px;
     width: 450px;
-
   }
 
   .section-owner {
     position: relative;
-    top: -25pc;
+    left: 20%;
+    max-width: 1200px;
+    
   }
 
   .about::first-letter {
     font-size: 2pc;
     line-height: normal;
   }
-  
+
   .about-2::first-letter {
     font-size: 2pc;
     line-height: normal;
@@ -147,27 +160,29 @@
 
   .owner {
     position: relative;
-    font-size: larger;
-    left: 30pc;
-    margin-top: -49pc;
-
+    font-size: small;
+    width: 600px;
+  
+  }
+  .div-mast{
+    max-width: 1200px;
   }
 
 
   .owner-title {
     position: relative;
-
-    font-size: 27px;
+    font-size:15px;
+    width: 300px;
   }
 
   .headshot {
     position: relative;
-    height: 700px;
-    width: 500px;
+    height: auto;
+    max-width: 300px;
     border-radius: 2%;
-
+ 
+  
   }
-
 
   .rwengineer {
     font-size: 490%;
@@ -193,212 +208,20 @@
     width: 100%;
   }
 
-
-
   footer,
   .footer-basic,
   .copyright {
-    padding: 40px 0;
+    padding: 10px 0;
     background-color: #353535;
     margin-top: 15px;
     text-align: center;
     font-size: 13px;
     color: #aaa;
     margin-bottom: 0;
+    width: 100%;
   }
 }
 
-/* CSS styles for mobile screens */
-@media (max-width: 480px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 100%;
-  }
-  
-  .root,
-  html,
-  body {
-    line-height: 1.5;
-    background-color: #76a5af;
-    -webkit-text-size-adjust: 100%;
-    font-family: "UniSpace";
-    color: black;
-  }
-  .logo3{
-    position: relative;
-    top: 5pc;
-    margin-top: 5pc;
-    width: 300px;
-    left: 3pc;
-    
-  }
-  .nav,
-  .navbar,
-  .li,
-  .a,
-  .nav-link,
-  .nav-link :active {
-    color: white !important;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: #353535;
-  }
-  
-  .masthead-title {
-    position: relative;
-    font-size: large;
-    line-height: 1.5;
-    display: inline;
-    top: 5pc;
-    right: -1pc;
-  }
-  
-  .ul-child {
-    margin-top: 8pc;
-    line-height: 1.5;
-    font-size: large;
-    text-indent: 20px;
-  }
-  
-  .section-idea {
-    margin-top: 2pc;
-  }
-  
-  .ul-child::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .bulb-img {
-    height: 350px;
-    max-width: 100%;
-  }
-  
-  .logo4 {
-    border-radius: 2%;
-    height: 500px;
-    width: 300px;
-
-  }
-  
-  .div-idea {
-    max-width: 715px;
-  }
-  
-  .contact-div {
-    margin-top: 2pc;
-    font-size: larger;
-    margin: none;
-    text-indent: 20px;
-  }
-  
-  .contact-paragraph {
-    margin-top: 2pc;
-    width: 100%;
-    margin-top: 6px;
-    max-height: 620px;
-    overflow: auto;
-  }
-  
-  .contact-paragraph::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .button,
-  .build-btn {
-    background-color: white;
-    padding: 5px;
-    border-color: #353535;
-    border-radius: 3%;
-    position: relative;
-    bottom: 0;
-  }
-  
-  .about {
-    margin-top: 2pc;
-    font-size: larger;
-    line-height: 1.5;
-  }
-  
-  .about-2 {
-    margin-top: 2pc;
-    columns: 1;
-    font-size: larger;
-    text-indent: 20px;
-    max-width: 450px;
-  }
-  
-  .about::first-letter,
-  .about-2::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .logo2 {
-    margin-top: 2pc;
-    height: 130px;
-    max-width: 100%;
-  }
-  
-  .owner {
-    margin-top: 2pc;
-    font-size: larger;
-    margin-top: -49px;
-    text-indent: 20px;
-  }
-  
-  .owner-title {
-    margin-top: 5pc;
-    font-size: 27px;
-  }
-  
-  .headshot {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .rwengineer {
-    font-size: 250%;
-  }
-  
-  .contactcard {
-    position: relative;
-    top: 25%;
-    right: 10%;
-    width: 300px;
-  }
-  
-  .hero-image {
-    background-image: url("./images/ratwerkslogo.png");
-    opacity: 10%;
-   height: 670px;
-   width:380px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  footer,
-  .footer-basic {
-    padding: 20px 0;
-    background-color: #353535;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-  }
-  
-
-
-}
 
 @media (min-width: 481px) and (max-width: 767px) {
   /* Styles for typical mobile screens */

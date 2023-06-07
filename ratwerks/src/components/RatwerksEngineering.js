@@ -11,14 +11,11 @@ export default function RatwerksEngineering() {
 
 
     return (
-        <div className="container" >
+        <div className="ratwerks-engineer" >
             <header className=" col-10 masthead">
-                <div className="">
-                    <div className=" h-100 align-items-center">
-                        <img style={{
-                            position: "relative",
-                            marginLeft: "-1pc", marginTop: "3pc"
-                        }} src={logo1} className="logo3" alt="logo" />
+                <div className="div-mast">
+                    <div className="">
+                        <img src={logo1} className="logo3" alt="logo" />
                         <div className="masthead text-center">
                             <div className="masthead-title">RatWerks Exists to Bring Your Invention Across the Finish Line</div>
                         </div>
