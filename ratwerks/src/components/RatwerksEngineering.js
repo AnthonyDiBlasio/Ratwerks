@@ -71,7 +71,7 @@ export default function RatwerksEngineering() {
                     <p className='about-2'>As a project engineer, he took a complicated production line that produced 300 units a year and revamped the process and product design to over 3000 units a year out the door. Alex has worked alongside union construction labor, Assembly line technicians and held meetings for CEOs and VPs. At this point in his career, Alex is compelled by the idea of lifting up those around him and provide high level engineering labor to the everyman
                </p>
                <div className="owner" >
-                    <div className="owner-title">Owner/Engineer Alex DiBlasio</div>
+                    <div className="owner-title">Owner/Engineer: Alex DiBlasio</div>
                     <img style={{
                         position: "relative"
                     }} src={headshot} className="headshot" alt="headshot" />
