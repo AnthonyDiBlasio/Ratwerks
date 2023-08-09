@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+
   /* Styles for desktop screens */
   * {
     margin: 0;
@@ -6,20 +6,52 @@
     box-sizing: border-box;
   }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Ensure the footer stays at the bottom */
+.footer-basic {
+  margin-top: auto;
+}
+
+
+
+
   .container {
-    max-width: 1200px;
+
     margin: 0 auto;
   }
 
   .logo3 {
     position: relative;
     height: auto;
-    max-width: 1100px;
     margin: 0 auto;
-    left: 16%;
-    margin-top: 5pc;
+    margin-top: 10pc;
+    justify-content: center;
+   
+  
   }
+.nav-logo{
+  position: relative;
+  height: 70px;
 
+}
   .root,
   html,
   body {
@@ -41,16 +73,24 @@
     color: white !important;
     font-weight: bolder;
     font-size: larger;
-    background-color: #353535;
+    
+   
+  }
+  
+  .masthead{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .masthead-title {
     position: relative;
-    margin-top: 5pc;
-    font-size: 320%;
+    margin-top: pc;
+    font-size: 45px;
     line-height: 2;
-    display: inline;
-    left: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .ul-child {
@@ -62,7 +102,7 @@
 
   .section-idea {
     position: relative;
-    margin-top: 5pc;
+    margin-top: 6pc;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -83,12 +123,12 @@
     position: relative;
     border-radius: 2%;
     height: auto;
-    max-width: 550px;
+    max-width: 450px;
   
   }
 
   .div-idea {
-    width: 800px;
+    width: 900px;
     height: auto;
     justify-content: center;
   }
@@ -97,9 +137,7 @@
     margin-top: 10pc;
     display: flex;
     justify-content: center;
-    max-width: 1200px;
     align-items: flex-start;
-    left: 11%;
   }
 
   .contact-div {
@@ -107,12 +145,12 @@
     font-size: large;
     text-indent: 50px;
     justify-content: center;
-    max-width: 1200px;
+  
   }
 
   .contact-paragraph {
     position: relative;
-    width: 700px;
+    width: 800px;
     left: 5pc;
   
     
@@ -130,7 +168,8 @@
     border-color: #353535;
     border-radius: 3%;
     position: relative;
-    left: 5pc;
+    left: 16pc;
+   
 
   }
 
@@ -150,8 +189,8 @@
   .section-owner {
     margin-top: 10pc;
     position: relative;
-    left: 13%;
-    max-width: 1200px;
+    display: flex;
+    justify-content: center;
     
   }
 
@@ -175,9 +214,7 @@
     width: 600px;
   
   }
-  .div-mast{
-    max-width: 1200px;
-  }
+
 
 
   .owner-title {
@@ -207,7 +244,9 @@
 
   .contactcard {
     position: absolute;
-    top: 25%;
+    top: 35%;
+    width: 800px;
+    left: 1pc;
   }
 
   .hero-image {
@@ -237,786 +276,139 @@
     margin-bottom: 0;
     width: 100%;
   }
-}
 
 
-@media (min-width: 481px) and (max-width: 767px) {
-  /* Styles for typical mobile screens */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+/* Media query for smaller screens (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Adjust the logo margin for better spacing on mobile */
+  .logo3 {
+    margin-top: 40%;
+    margin-left: 15%;
+    max-width: 270px; /* Reduce logo size on mobile */
   }
-  
-  .container {
-    width: 100%;
-  }
-  
-  .root,
-  html,
-  body {
-    line-height: 1.5;
-    background-color: #76a5af;
-    -webkit-text-size-adjust: 100%;
-    font-family: "UniSpace";
-    color: black;
-  }
-  .logo3{
-    position: relative;
-    top: 5pc;
-    margin-top: 5pc;
-    width: 400px;
-    left: 6pc;
-    
-  }
-  .nav,
-  .navbar,
-  .li,
-  .a,
-  .nav-link,
-  .nav-link :active {
-    color: white !important;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: #353535;
-  }
-  
+
+  /* Adjust the font size and line-height for better readability on mobile */
   .masthead-title {
-    position: relative;
-    font-size: large;
+    font-size: 20px;
     line-height: 1.5;
-    display: inline;
-    top: 5pc;
-    right: -1pc;
   }
-  
-  .ul-child {
-    margin-top: 8pc;
-    line-height: 1.5;
-    font-size: large;
-    text-indent: 20px;
-  }
-  
-  .section-idea {
-    margin-top: 2pc;
-  }
-  
-  .ul-child::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .bulb-img {
-    height: 350px;
-    max-width: 100%;
-  }
-  
-  .logo4 {
-    border-radius: 2%;
-    max-width: 100%;
-  }
-  
+
+  /* Adjust the width for better spacing on mobile */
   .div-idea {
-    max-width: 715px;
+    width: 100%;
   }
-  
-  .contact-div {
-    margin-top: 2pc;
-    font-size: larger;
-    margin: none;
-    text-indent: 20px;
+  .section-idea{
+    width: 100%;
   }
-  
+  .ul-child{
+    font-size: x-small;
+    width: 220px;
+  }
+  .bulb-img{
+    max-height:210px;
+  }
+
+  .section-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact-paragraph {
-    margin-top: 2pc;
-    width: 100%;
-    margin-top: 6px;
-    max-height: 620px;
-    overflow: auto;
-  }
-  
-  .contact-paragraph::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .button,
-  .build-btn {
-    background-color: white;
-    padding: 5px;
-    border-color: #353535;
-    border-radius: 3%;
     position: relative;
-    bottom: 0;
+    margin-top: 1rem;
+    text-align: justify;
+    font-size: x-small;
+    
+    margin-left: -10pc;
+    max-width: 300px;
   }
-  
+
+  .logo4 {
+    max-width: 300px;
+    top:-4pc
+  }
+  .build-btn{
+    margin-left:-21pc ;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .div-idea {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  /* Adjust the font size and line-height for better readability on mobile */
   .about {
-    margin-top: 2pc;
-    font-size: larger;
-    line-height: 1.5;
+    width: 300px;
+    font-size: small;
+    margin-left: 3pc;
   }
-  
-  .about-2 {
-    margin-top: 2pc;
-    columns: 1;
-    font-size: larger;
-    text-indent: 20px;
-    max-width: 450px;
-  }
-  
-  .about::first-letter,
-  .about-2::first-letter {
-    font-size: 1.5rem;
+  .about::first-letter {
+    font-size: 2pc;
     line-height: normal;
   }
-  
-  .logo2 {
-    margin-top: 2pc;
-    height: 130px;
-    max-width: 100%;
-  }
-  
-  .owner {
-    margin-top: 2pc;
-    font-size: larger;
-    margin-top: -49px;
-    text-indent: 20px;
-  }
-  
-  .owner-title {
-    margin-top: 5pc;
-    font-size: 27px;
-  }
-  
-  .headshot {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .rwengineer {
-    font-size: 250%;
-  }
-  
-  .contactcard {
-    position: relative;
-    top: 25%;
-    right: 10%;
-    width: 300px;
-  }
-  
-  .hero-image {
-    background-image: url("./images/ratwerkslogo.png");
-    opacity: 10%;
-   height: 670px;
-   width:380px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  footer,
-  .footer-basic {
-    padding: 20px 0;
-    background-color: #353535;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-  }
 
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for larger mobile screens or small tablets */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* Adjust the font size and line-height for better readability on mobile */
+  .about-2 {
+    width:300px ;
+    font-size: small;
+    margin-left: 3pc;
   }
+  .section-owner{
+    flex-direction: column;
+    align-items: center;
   
-  .container {
+  }
+  .div-owner{
     width: 100%;
   }
-  
-  .root,
-  html,
-  body {
-    line-height: 1.5;
-    background-color: #76a5af;
-    -webkit-text-size-adjust: 100%;
-    font-family: "UniSpace";
-    color: black;
-  }
-  .logo3{
+
+  .owner-title {
     position: relative;
-    top: 5pc;
-    margin-top: 5pc;
-    width: 300px;
+  text-align: center;
+  text-align: justify;
+  font-size: medium;
+  margin-top: 2pc;
     left: 3pc;
-    
+    top: -1pc;
+  
   }
+  .headshot {
+    left: 3pc;
+    bottom: 0pc;
+    margin-top: 0;
+    max-width: 300px; /* Reduce image size on mobile */
+  }
+
+  /* Adjust the font size for better readability on mobile */
+  .rwengineer {
+    font-size: 300%;
+  }
+
+  /* Adjust the width for better spacing on mobile */
+    
+  .contactcard {
+    width: 300px;
+    position: relative;
+    top: 10pc;
+    left: -17pc;
+  }/* Adjust the height and width for better spacing on mobile */
+  .hero-image {
+    height: 800px;
+    width: 100%;
+  }
+
+  /* Adjust the font size and line-height for better readability on mobile */
   .nav,
   .navbar,
   .li,
   .a,
   .nav-link,
   .nav-link :active {
-    color: white !important;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: #353535;
+    font-size: 16px;
+    line-height: 2;
   }
-  
-  .masthead-title {
-    position: relative;
-    font-size: large;
-    line-height: 1.5;
-    display: inline;
-    top: 5pc;
-    right: -1pc;
-  }
-  
-  .ul-child {
-    margin-top: 8pc;
-    line-height: 1.5;
-    font-size: large;
-    text-indent: 20px;
-  }
-  
-  .section-idea {
-    margin-top: 2pc;
-  }
-  
-  .ul-child::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .bulb-img {
-    height: 350px;
-    max-width: 100%;
-  }
-  
-  .logo4 {
-    border-radius: 2%;
-    max-width: 100%;
-  }
-  
-  .div-idea {
-    max-width: 715px;
-  }
-  
-  .contact-div {
-    margin-top: 2pc;
-    font-size: larger;
-    margin: none;
-    text-indent: 20px;
-  }
-  
-  .contact-paragraph {
-    margin-top: 2pc;
-    width: 100%;
-    margin-top: 6px;
-    max-height: 620px;
-    overflow: auto;
-  }
-  
-  .contact-paragraph::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .button,
-  .build-btn {
-    background-color: white;
-    padding: 5px;
-    border-color: #353535;
-    border-radius: 3%;
-    position: relative;
-    bottom: 0;
-  }
-  
-  .about {
-    margin-top: 2pc;
-    font-size: larger;
-    line-height: 1.5;
-  }
-  
-  .about-2 {
-    margin-top: 2pc;
-    columns: 1;
-    font-size: larger;
-    text-indent: 20px;
-    max-width: 450px;
-  }
-  
-  .about::first-letter,
-  .about-2::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .logo2 {
-    margin-top: 2pc;
-    height: 130px;
-    max-width: 100%;
-  }
-  
-  .owner {
-    margin-top: 2pc;
-    font-size: larger;
-    margin-top: -49px;
-    text-indent: 20px;
-  }
-  
-  .owner-title {
-    margin-top: 5pc;
-    font-size: 27px;
-  }
-  
-  .headshot {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .rwengineer {
-    font-size: 250%;
-  }
-  
-  .contactcard {
-    position: relative;
-    top: 25%;
-    right: 10%;
-    width: 300px;
-  }
-  
-  .hero-image {
-    background-image: url("./images/ratwerkslogo.png");
-    opacity: 10%;
-   height: 670px;
-   width:380px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  footer,
-  .footer-basic {
-    padding: 20px 0;
-    background-color: #353535;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-  }
-  
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* Styles for typical mobile screens */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 100%;
-  }
-  
-  .root,
-  html,
-  body {
-    line-height: 1.5;
-    background-color: #76a5af;
-    -webkit-text-size-adjust: 100%;
-    font-family: "UniSpace";
-    color: black;
-  }
-  .logo3{
-    position: relative;
-    top: 5pc;
-    margin-top: 5pc;
-    width: 400px;
-    left: 6pc;
-    
-  }
-  .nav,
-  .navbar,
-  .li,
-  .a,
-  .nav-link,
-  .nav-link :active {
-    color: white !important;
-    font-weight: bolder;
-    font-size: larger;
-    background-color: #353535;
-  }
-  
-  .masthead-title {
-    position: relative;
-    font-size: large;
-    line-height: 1.5;
-    display: inline;
-    top: 5pc;
-    right: -1pc;
-  }
-  
-  .ul-child {
-    margin-top: 8pc;
-    line-height: 1.5;
-    font-size: large;
-    text-indent: 20px;
-  }
-  
-  .section-idea {
-    margin-top: 2pc;
-  }
-  
-  .ul-child::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .bulb-img {
-    height: 350px;
-    max-width: 100%;
-  }
-  
-  .logo4 {
-    border-radius: 2%;
-    max-width: 100%;
-  }
-  
-  .div-idea {
-    max-width: 715px;
-  }
-  
-  .contact-div {
-    margin-top: 2pc;
-    font-size: larger;
-    margin: none;
-    text-indent: 20px;
-  }
-  
-  .contact-paragraph {
-    margin-top: 2pc;
-    width: 100%;
-    margin-top: 6px;
-    max-height: 620px;
-    overflow: auto;
-  }
-  
-  .contact-paragraph::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .button,
-  .build-btn {
-    background-color: white;
-    padding: 5px;
-    border-color: #353535;
-    border-radius: 3%;
-    position: relative;
-    bottom: 0;
-  }
-  
-  .about {
-    margin-top: 2pc;
-    font-size: larger;
-    line-height: 1.5;
-  }
-  
-  .about-2 {
-    margin-top: 2pc;
-    columns: 1;
-    font-size: larger;
-    text-indent: 20px;
-    max-width: 450px;
-  }
-  
-  .about::first-letter,
-  .about-2::first-letter {
-    font-size: 1.5rem;
-    line-height: normal;
-  }
-  
-  .logo2 {
-    margin-top: 2pc;
-    height: 130px;
-    max-width: 100%;
-  }
-  
-  .owner {
-    margin-top: 2pc;
-    font-size: larger;
-    margin-top: -49px;
-    text-indent: 20px;
-  }
-  
-  .owner-title {
-    margin-top: 5pc;
-    font-size: 27px;
-  }
-  
-  .headshot {
-    max-width: 100%;
-    height: auto;
-    border-radius: 2%;
-  }
-  
-  .rwengineer {
-    font-size: 250%;
-  }
-  
-  .contactcard {
-    position: relative;
-    top: 25%;
-    right: 10%;
-    width: 300px;
-  }
-  
-  .hero-image {
-    background-image: url("./images/ratwerkslogo.png");
-    opacity: 10%;
-   height: 670px;
-   width:680px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  footer,
-  .footer-basic {
-    padding: 20px 0;
-    background-color: #353535;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  /* Styles for tablets and larger screens in landscape mode */
-    /* Styles for desktop screens */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  
-    .container {
-      width: 100%;
-    }
-  .logo3{
-    position: relative;
-  }
-    .root,
-    html,
-    body {
-      line-height: 3;
-      background-color: #76a5af;
-      -webkit-text-size-adjust: 100%;
-      font-family: "UniSpace";
-      height: 100%;
-      position: relative;
-      color: black;
-    }
-    .nav,
-    .navbar,
-    .li,
-    .a,
-    .nav-link,
-    .nav-link :active {
-      color: white !important;
-      font-weight: bolder;
-      font-size: larger;
-      background-color: #353535;
-  
-    }
-    .masthead-title {
-      position: relative;
-      font-size: 47px;
-      line-height: 2;
-      display: inline;
-      ;
-    }
-  
-    .ul-child {
-  
-      line-height: 3;
-      text-indent: 50px;
-      font-size: x-large;
-      right: 5%;
-  
-    }
-  
-    .section-idea {
-      position: relative;
-      right: 5%;
-      margin-top: 25pc
-    }
-  
-    .ul-child::first-letter {
-      font-size: 2pc;
-      line-height: normal;
-    }
-  
-    .bulb-img {
-      top: -40pc;
-      left: 40pc;
-      height: 650px;
-    }
-  
-    .logo4 {
-      position: relative;
-      border-radius: 2%;
-      height: 700px;
-      width: 300px;
-      right: 5%;
-      margin-top: -20pc;
-    }
-  
-    .div-idea {
-      width: 715px;
-    }
-  
-    .contact-div {
-      position: relative;
-      margin: none;
-      left: 30pc;
-      font-size: larger;
-      top: -45pc;
-      text-indent: 50px;
-    }
-  
-    .contact-paragraph {
-      width: 700px;
-      margin-top: 6px;
-      height: 620px;
-  
-    }
-  
-    .contact-paragraph::first-letter {
-      font-size: 2pc;
-      line-height: normal;
-    }
-  
-    .button,
-    .build-btn {
-      background-color: white;
-      padding: 5px;
-      border-color: #353535;
-      border-radius: 3%;
-      position: relative;
-      bottom: pc;
-    }
-  
-  
-    .about {
-      font-size: larger;
-      line-height: 3;
-    
-    }
-    .about-2 {
-      columns: 1;
-      font-size: larger;
-      text-indent: 50px;
-      width: 450px;
-  
-    }
-  
-    .section-owner {
-      position: relative;
-      top: -25pc;
-    }
-  
-    .about::first-letter {
-      font-size: 2pc;
-      line-height: normal;
-    }
-    
-    .about-2::first-letter {
-      font-size: 2pc;
-      line-height: normal;
-    }
-  
-    .logo2 {
-      height: 130px;
-    }
-  
-    .owner {
-      position: relative;
-      font-size: larger;
-      left: 30pc;
-      margin-top: -49pc;
-  
-    }
-  
-    .section-owner {
-      right: 5%;
-    }
-  
-    .owner-title {
-      position: relative;
-      right: -1pc;
-      font-size: 27px;
-    }
-  
-    .headshot {
-      position: relative;
-      height: 700px;
-      width: 500px;
-      border-radius: 2%;
-  
-    }
-  
-  
-    .rwengineer {
-      font-size: 490%;
-    }
-  
-    .contactcard {
-      position: absolute;
-      top: 25%;
-    }
-  
-    .hero-image {
-      background-image: url("./images/ratwerkslogo.png");
-      opacity: 10%;
-      height: 1350px;
-      width: 1800px;
-      margin: 0%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-    }
-  
-    .container {
-      width: 100%;
-    }
-  
-  
-  
-    footer,
-    .footer-basic,
-    .copyright {
-      padding: 40px 0;
-      background-color: #353535;
-      margin-top: 15px;
-      text-align: center;
-      font-size: 13px;
-      color: #aaa;
-      margin-bottom: 0;
-    }
-  
 }

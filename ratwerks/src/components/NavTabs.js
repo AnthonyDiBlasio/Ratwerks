@@ -1,29 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/ratwerkslogowhite.png'
-import '../index.css'
+import { Navbar, Nav } from 'react-bootstrap';
+import logo from '../images/ratwerkslogowhite.png';
+import '../index.css';
 
 function NavTabs() {
   return (
-
-    <nav className="navbar navbar-expand-lg shadow fixed-top">
-      <div className="container">  <div>
-          <Link to="/"><img style={{ marginTop:"1pc",marginLeft:"1pc",height:"70px"}} src={logo} alt='logo'></img></Link>
-        
-        </div>
-        
-      
-        <div className="navbar" id="">
-          <ul className="navbar-nav ms-auto">
-         
-            <li className="nav-item">
-            <Link className = "nav-a"to="/contact" style={{textDecoration:"none",fontSize:"20px",color:"white"}}>Contact</Link>
-            </li>
-          </ul>
-        </div>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+      <div className="container">
+        <Navbar.Brand>
+          <Link to="/">
+            <img
+              style={{ height: '70px' }}
+              src={logo}
+              alt="logo"
+              className="nav-logo"
+            />
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link>
+              <Link
+                to="/contact"
+                style={{
+                  textDecoration: 'none',
+                  fontSize: '20px',
+                  color: 'white',
+                }}
+              >
+                Contact
+              </Link>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
       </div>
-    </nav>
-
+    </Navbar>
   );
 }
 
