@@ -1,20 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.7290af91.css",
-    "main.js": "/static/js/main.9afd7a81.js",
-    "static/js/787.5fac9486.chunk.js": "/static/js/787.5fac9486.chunk.js",
-    "static/media/coffee.png": "/static/media/coffee.5f7ff57734e4a4cae8f6.png",
-    "static/media/headshot.png": "/static/media/headshot.b1fed78f1b05c7c1b062.png",
-    "static/media/ratwerkslogowhite.png": "/static/media/ratwerkslogowhite.43523c90aca6dc23bed5.png",
-    "static/media/logo1.png": "/static/media/logo1.12133d675d821a908524.png",
-    "static/media/bulb.png": "/static/media/bulb.14028e3ee1205072effb.png",
+    "main.css": "/static/css/main.314ef0ab.css",
+    "main.js": "/static/js/main.f1d3b56e.js",
+    "static/media/ratWHITE.png": "/static/media/ratWHITE.8226f4fc9abb5717e398.png",
     "index.html": "/index.html",
-    "main.7290af91.css.map": "/static/css/main.7290af91.css.map",
-    "main.9afd7a81.js.map": "/static/js/main.9afd7a81.js.map",
-    "787.5fac9486.chunk.js.map": "/static/js/787.5fac9486.chunk.js.map"
+    "main.314ef0ab.css.map": "/static/css/main.314ef0ab.css.map",
+    "main.f1d3b56e.js.map": "/static/js/main.f1d3b56e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7290af91.css",
-    "static/js/main.9afd7a81.js"
+    "static/css/main.314ef0ab.css",
+    "static/js/main.f1d3b56e.js"
   ]
 }
